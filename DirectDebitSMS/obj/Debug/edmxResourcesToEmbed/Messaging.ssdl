@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Chill.MessagingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AuthLoans">
+    <Key>
+      <PropertyRef Name="AuthLoansId" />
+    </Key>
+    <Property Name="AuthLoansId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACCO_BROKER_NUMBER" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ORGA_NAME" Type="nvarchar" MaxLength="256" />
+    <Property Name="ACCO_BROKER_REF" Type="nvarchar" MaxLength="20" />
+    <Property Name="ACCO_ORGAN_NUMBER" Type="int" />
+    <Property Name="ACCO_SUFFIX" Type="int" />
+    <Property Name="ACCO_PARENT_LOAN_SUFFIX" Type="int" />
+    <Property Name="ACCO_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="ACCO_APPLICATION_REC_DATE" Type="datetime" />
+    <Property Name="ACCO_DATE_PENDING" Type="datetime" />
+    <Property Name="ACCO_BROKER_PAY_DATE" Type="datetime" />
+    <Property Name="ACCO_DATE_CANCELLED" Type="datetime" />
+    <Property Name="ACCO_RENEWAL_DATE" Type="datetime" />
+    <Property Name="ACCO_PREMIUM_AMOUNT" Type="smallmoney" />
+    <Property Name="ACCO_INTEREST_RATE_USED" Type="float" />
+    <Property Name="CENTRALISED OVERRIDER %" Type="float" />
+    <Property Name="CENTRALISED OVERRIDER £" Type="float" />
+    <Property Name="ACCO_COMMISSION_RATE" Type="float" />
+    <Property Name="ACCO_OVERRIDER" Type="float" />
+    <Property Name="ACCO_STATUS" Type="nvarchar" MaxLength="10" />
+    <Property Name="CONTACT" Type="nvarchar" MaxLength="10" />
+    <Property Name="ACCO_BROKER_CONTACT_NAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="SCHE_DATE" Type="datetime" />
+    <Property Name="SCHE_AMOUNT" Type="smallmoney" />
+    <Property Name="FIRST_INSTALMENT_TYPE" Type="nvarchar" MaxLength="255" />
+    <Property Name="SELECTED_FOR_TEXT" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="ChillMessagingModelStoreContainer">
+    <EntitySet Name="AuthLoans" EntityType="Self.AuthLoans" Schema="msg" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

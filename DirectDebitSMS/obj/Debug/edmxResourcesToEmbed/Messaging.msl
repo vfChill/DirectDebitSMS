@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChillMessagingModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="AuthLoans">
+      <EntityTypeMapping TypeName="Chill.MessagingModel.AuthLoan">
+        <MappingFragment StoreEntitySet="AuthLoans">
+          <ScalarProperty Name="AuthLoansId" ColumnName="AuthLoansId" />
+          <ScalarProperty Name="ACCO_BROKER_NUMBER" ColumnName="ACCO_BROKER_NUMBER" />
+          <ScalarProperty Name="ORGA_NAME" ColumnName="ORGA_NAME" />
+          <ScalarProperty Name="ACCO_BROKER_REF" ColumnName="ACCO_BROKER_REF" />
+          <ScalarProperty Name="ACCO_ORGAN_NUMBER" ColumnName="ACCO_ORGAN_NUMBER" />
+          <ScalarProperty Name="ACCO_SUFFIX" ColumnName="ACCO_SUFFIX" />
+          <ScalarProperty Name="ACCO_PARENT_LOAN_SUFFIX" ColumnName="ACCO_PARENT_LOAN_SUFFIX" />
+          <ScalarProperty Name="ACCO_NAME" ColumnName="ACCO_NAME" />
+          <ScalarProperty Name="ACCO_APPLICATION_REC_DATE" ColumnName="ACCO_APPLICATION_REC_DATE" />
+          <ScalarProperty Name="ACCO_DATE_PENDING" ColumnName="ACCO_DATE_PENDING" />
+          <ScalarProperty Name="ACCO_BROKER_PAY_DATE" ColumnName="ACCO_BROKER_PAY_DATE" />
+          <ScalarProperty Name="ACCO_DATE_CANCELLED" ColumnName="ACCO_DATE_CANCELLED" />
+          <ScalarProperty Name="ACCO_RENEWAL_DATE" ColumnName="ACCO_RENEWAL_DATE" />
+          <ScalarProperty Name="ACCO_PREMIUM_AMOUNT" ColumnName="ACCO_PREMIUM_AMOUNT" />
+          <ScalarProperty Name="ACCO_INTEREST_RATE_USED" ColumnName="ACCO_INTEREST_RATE_USED" />
+          <ScalarProperty Name="CENTRALISED_OVERRIDER__" ColumnName="CENTRALISED OVERRIDER %" />
+          <ScalarProperty Name="CENTRALISED_OVERRIDER__1" ColumnName="CENTRALISED OVERRIDER £" />
+          <ScalarProperty Name="ACCO_COMMISSION_RATE" ColumnName="ACCO_COMMISSION_RATE" />
+          <ScalarProperty Name="ACCO_OVERRIDER" ColumnName="ACCO_OVERRIDER" />
+          <ScalarProperty Name="ACCO_STATUS" ColumnName="ACCO_STATUS" />
+          <ScalarProperty Name="CONTACT" ColumnName="CONTACT" />
+          <ScalarProperty Name="ACCO_BROKER_CONTACT_NAME" ColumnName="ACCO_BROKER_CONTACT_NAME" />
+          <ScalarProperty Name="SCHE_DATE" ColumnName="SCHE_DATE" />
+          <ScalarProperty Name="SCHE_AMOUNT" ColumnName="SCHE_AMOUNT" />
+          <ScalarProperty Name="FIRST_INSTALMENT_TYPE" ColumnName="FIRST_INSTALMENT_TYPE" />
+          <ScalarProperty Name="SELECTED_FOR_TEXT" ColumnName="SELECTED_FOR_TEXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
